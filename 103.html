@@ -1,0 +1,43 @@
+<html>
+    <title>Real Time Image Identification App</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://cdn.jsdelivr.net/npm/p5@1.8.0/lib/p5.js"></script>
+      <!-- <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script> -->
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ml5/0.5.1/ml5.min.js"></script> -->
+      <script src="https://cdn.jsdelivr.net/npm/ml5@0.7.0/dist/ml5.min.js"></script>
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  
+  
+  
+      <link rel="stylesheet" type="text/css" href="103.css">
+  
+  </head>
+  <body>
+    <h1>webapp 103</h1>
+    <h3>detects:</h3>
+    <div id="div1">thumbs up</div>
+    <br>
+    <div id="div2">high five</div>
+    <br>
+    <div id="div3">punch</div>
+    <br>
+    <br>
+        <h5>webcam</h5>
+        <div id="camera"></div>
+        <hr>
+        <hr>
+        <div id="result"></div>
+        <br><br>
+        <button onclick="take_snapshot();" class="btn btn-info">capture</button>
+    <button onclick="check();" class="btn btn-success">what is it</button>
+    <br><br><br>
+    <p style="font-size: 30px;">object: <span id="result_object_name"></span></p>
+    <p style="font-size: 30px;">accuracy: <span id="result_object_accuracy"></span></p>
+
+        <script src="103.js"></script> 
+  </body>
+  </html>

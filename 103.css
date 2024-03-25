@@ -1,0 +1,10 @@
+#camera {
+    border: 20px darkcyan;
+width: 400px;
+height: 400px;
+box-shadow: 10px 10px 10px 10px greenyellow;
+}
+
+#result_object_name , #result_object_accuracy {
+    color: coral;
+}
